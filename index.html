@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-forms.css">
+    <link rel="shortcut icon" href="img/icons/video-player.png">
+    <title>CINETECA</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo_ul">
+                <ul>
+                    <div class="logo">
+                        <span class="logo-text">CineteCa</span>
+                    </div>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">PRÉ-VENDAS</a></li>
+                    <li><a href="#">CINE CLUB</a></li>
+                    <li><a href="#">SUA SESSÃO</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="buscar_e_usuario">
+            <input class="buscar_input" type="text" placeholder="Buscar..." id="buscar_input">
+            <a href="#" class="fazer-login" id="usuarioBotao">FAZER LOGIN</a>
+            <div class="menu_flutuante_login" id="userMenu">
+                <div class="close_menu_login">
+                    <h4 class="acessar_texto">ACESSAR O CINETECA</h4>
+                    <img id="fecharMenuBotao" class="botao_sair_menu_login" src="img/icons/go-back-arrow-svgrepo-com.svg" alt="">
+                </div>
+                <section class="menu_login">
+                    <div class="menu_item_login">
+                        <img class="img_icons" src="img/icons/mail-open-svgrepo-com.svg" alt="simbolo e-mail" width="20" height="20">
+                        <h3 class="acessos">ACESSAR POR E-MAIL</h3>
+                    </div>
+                    <div class="menu_item_login">
+                        <img class="img_icons" src="img/icons/google-178-svgrepo-com.svg" alt="simbolo google" width="20" height="20">
+                        <h3 class="acessos">ACESSAR COM GOOGLE</h3>
+                    </div>
+                    <div id="appleLogin" class="menu_item_login">
+                        <img class="img_icons" src="img/icons/apple-svgrepo-com.svg" alt="simbolo apple" width="20" height="20">
+                        <h3 class="acessos">ACESSAR COM APPLE</h3>
+                    </div>
+                    <h4 class="sem_conta">Não tem conta? <a href="login.html" id="criarConta">Crie uma agora</a></h4>
+                </section>
+            </div>
+            <div class="overlay" id="overlay"></div>
+            <div class="menu_flutuante_criar_conta" id="menuCriarConta">
+                <div class="form">
+                    <form action="#">
+                        <div class="form-header">
+                            <div class="title">
+                                <h1>Cadastre-se</h1>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-box">
+                                <label for="firstname">Primeiro Nome</label>
+                                <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="lastname">Sobrenome</label>
+                                <input id="lastname" type="text" name="lastname" placeholder="Digite seu Sobrenome" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="cpf">CPF</label>
+                                <input id="cpf" type="text" name="cpf" placeholder="Digite seu CPF" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="email">Email</label>
+                                <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="password">Senha</label>
+                                <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="Confirmpassword">Confirme sua senha</label>
+                                <input id="Confirmpassword" type="password" name="Confirmpassword" placeholder="Confirme sua senha" required>
+                            </div>
+                        </div>
+                        <div class="continue-button">
+                            <button><a href="#">Continuar</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="buscar">
+                <a href="#" class="card"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="carrossel">
+            <div class="carrossel_imagens">
+                <div class="slide">
+                    <img src="img/deadpool-wolverine-1920x1200-16840.jpg" alt="imagem 1">
+                    <div class="conteudo">
+                        <h1 id="titulo">Deadpool & Wolverine</h1>
+                        <p>Deadpool recebe uma oferta da Autoridade de Variância Temporal para se juntar ao Universo Cinematográfico Marvel, mas em vez disso recruta uma variante do Wolverine para salvar seu universo da extinção.</p>
+                        <div class="detalhes">
+                            <h5 id="gen">Ação</h5>
+                            <h4>2024</h4>
+                        </div>
+                        <div class="btn_ingresso">
+                            <a href="tickets.html?filme=deadpool"><img src="img/icons/ticket-svgrepo-com.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/jurassic-world-fallen-kingdom-poster.jpg" alt="imagem 2">
+                    <div class="conteudo">
+                        <h1 id="titulo">Jurassic World</h1>
+                        <p>Uma nova aventura de dinossauros começa, com perigos e descobertas inesperadas.</p>
+                        <div class="detalhes">
+                            <h5 id="gen">Aventura</h5>
+                            <h4>2018</h4>
+                        </div>
+                        <div class="btn_ingresso">
+                            <a href="tickets.html?filme=jurassic"><img src="img/icons/ticket-svgrepo-com.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/inside-out-poster.jpeg" alt="imagem 3">
+                    <div class="conteudo">
+                        <h1 id="titulo">Divertida Mente 2</h1>
+                        <p>As emoções de uma jovem menina ganham vida, levando-nos a uma jornada dentro de sua mente.</p>
+                        <div class="detalhes">
+                            <h5 id="gen">Animação</h5>
+                            <h4>2024</h4>
+                        </div>
+                        <div class="btn_ingresso">
+                            <a href="tickets.html?filme=divertidamente"><img src="img/icons/ticket-svgrepo-com.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/posters/batman-affiche-.jpeg" alt="imagem 4">
+                    <div class="conteudo">
+                        <h1 id="titulo">The Batman</h1>
+                        <p>Quando um serial killer sádico começa a assassinar figuras políticas importantes em Gotham, Batman é forçado a investigar a corrupção oculta da cidade e a questionar o envolvimento de sua própria família.</p>
+                        <div class="detalhes">
+                            <h5 id="gen">Policial</h5>
+                            <h4>2022</h4>
+                        </div>
+                        <div class="btn_ingresso">
+                            <a href="tickets.html?filme=batman" class="comprar-ingresso-btn"><img src="img/icons/ticket-svgrepo-com.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="filme-detalhes">
+            <div class="card" id="detalhe1">
+                <p id="dataHora1">Hoje, 08 Ago, 21h10</p>
+                <p>Legndado | 2D</p>
+            </div>
+            <div class="card" id="detalhe2">
+                <p id="dataHora2">Hoje, 08 Ago, 21h10</p>
+                <p>Legndado | 2D</p>
+            </div>
+            <div class="card" id="detalhe3">
+                <p id="dataHora3">Hoje, 08 Ago, 21h10</p>
+                <p>Legndado | 2D</p>
+            </div>
+            <div class="card" id="detalhe4">
+                <p id="dataHora4">Hoje, 08 Ago, 21h10</p>
+                <p>Legndado | 2D</p>
+            </div>
+            <div class="card" id="detalhe5">
+                <p id="dataHora5">Hoje, 08 Ago, 21h10</p>
+                <p>Legndado | 2D</p>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
